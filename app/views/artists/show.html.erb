@@ -10,5 +10,15 @@
   <%= @artist.genre %>
 </p>
 
+<p>
+  <strong>Albums</strong>
+  <% Album.all.each {|a|  %>
+    <%=div_for(a) do%>
+    <%=a.name%>
+    <%end%>
+  <%}%>
+</p>
+
+<%= link_to 'Add album', new_album_path%> |
 <%= link_to 'Edit', edit_artist_path(@artist) %> |
 <%= link_to 'Back', artists_path %>

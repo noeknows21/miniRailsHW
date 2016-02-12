@@ -19,7 +19,7 @@
         <td><%= artist.genre %></td>
         <td><a href="https://twitter.com/<%=artist.name.delete(" ")%>" class="twitter-follow-button" data-show-count="false">Follow @<%=artist.name.delete(" ")%></a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></td>
-        <td><%= link_to 'Show', artist %></td>
+        <td><%= link_to 'Add album', artist %></td>
         <td><%= link_to 'Edit', edit_artist_path(artist) %></td>
         <td><%= link_to 'Destroy', artist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
